@@ -11,7 +11,30 @@
 
 .drawMaps {
     margin: 10px 5px;
-    height: 80vmin;
+    height: 75vmin;
     padding: 10px;
     background-color: #282c34;
+}
+
+.drawCharts {
+  margin: 10px 5px;
+  height: 75vmin;
+  padding: 10px;
+  border: 1px solid #282c34;
+}
+
+.chartsDiv{
+  margin: 0 100px;
+}
+
+li{
+  padding: 10px;
+}
+
+li h3{
+  text-decoration: underline;
+}
+
+li:hover{
+  text-decoration: underline;
 }

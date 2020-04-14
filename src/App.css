@@ -1,9 +1,9 @@
 .navClass{
   width: 20%;
-  height: 97vh;
+  height: 85vh;
   padding: 5px;
   float: left;
-  border: 1px solid #ff0000;
+  border-right: 1px solid #282c34;
 }
 
 nav ul li{
@@ -17,10 +17,15 @@ li a{
 
 .mapsDiv{
   width: 76%;
-  min-height: 97vh;
+  min-height: 90vh;
   float: left;
   height: auto;
   padding: 5px;
-  border: 1px solid #ff0000;
+}
+
+.rightDiv{
+  display: flex;
+  justify-content: flex-end;
+  width: 71vw;
 }
 

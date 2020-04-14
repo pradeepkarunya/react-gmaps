@@ -5,8 +5,8 @@ class GeneralMaps extends Component {
 
     state = {
         mapStyles: {
-            width: '72.7vw',
-            height: '80vh',
+            width: '72vw',
+            height: '72vh',
             position: 'relative !important'
         }
     }

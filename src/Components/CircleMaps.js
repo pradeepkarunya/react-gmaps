@@ -42,9 +42,9 @@ class CircleMaps extends Component {
             zoom={12}
             places={this.state.data}
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmjp6tqeUtnNxiqBN8SgonoCkhWLmsekc"
-            loadingElement={<div style={{ height: `85%` }} />}
-            containerElement={<div style={{ height: `630px` }} />}
-            mapElement={<div style={{ height: `80%` }} />}
+            loadingElement={<div style={{ height: `80%` }} />}
+            containerElement={<div style={{ height: `600px` }} />}
+            mapElement={<div style={{ height: `75%` }} />}
         />
         
         </div>
