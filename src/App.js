@@ -6,8 +6,12 @@ import MarkerMaps from "./Components/MarkerMaps";
 import ChartWrapper from './Components/charts/d3charts/ChartWrapper';
 import BarChartWrapper from './Components/charts/d3charts/BarChartWrapper';
 import Navbar from 'react-bootstrap/Navbar';
-import './App.css';
-import './Components/styles.css';
+
+import './App.scss';
+import './Components/styles.scss';
+
+
+import Popup from './Components/popup/popup';
 
 class App extends Component {
   render() {
@@ -15,7 +19,7 @@ class App extends Component {
       <React.Fragment>
       <Navbar bg="light">
         <Navbar.Brand>Pradeep Kumar's Work Showcase</Navbar.Brand>
-          <div className="rightDiv">About Me</div>
+          <div className="rightDiv"><div className="aboutme">About Me</div></div>
       </Navbar>
       <Router>
         <div>
@@ -63,6 +67,7 @@ class App extends Component {
         </div>
         
       </Router>
+      <Popup />
       </React.Fragment>
     );
   }
