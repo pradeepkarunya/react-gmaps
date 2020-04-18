@@ -14,12 +14,23 @@ import './Components/styles.scss';
 import Popup from './Components/popup/popup';
 
 class App extends Component {
+
+  state={
+    popupview: false
+  }
+
+  popupFn = (evt)=>{
+    let popupToggle = !this.state.popupview;
+    this.setState({
+      popupview: popupToggle
+    })
+  }
   render() {
     return (
       <React.Fragment>
       <Navbar bg="light">
         <Navbar.Brand>Pradeep Kumar's Work Showcase</Navbar.Brand>
-          <div className="rightDiv"><div className="aboutme">About Me</div></div>
+          <div className="rightDiv"><div className="aboutme" onClick={this.popupFn}>About Me</div></div>
       </Navbar>
       <Router>
         <div>
@@ -67,7 +78,10 @@ class App extends Component {
         </div>
         
       </Router>
-      <Popup />
+      {
+        this.state.popupview ? <Popup passref = {this.popupFn} /> : null
+      }
+      
       </React.Fragment>
     );
   }
