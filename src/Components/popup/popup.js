@@ -28,9 +28,24 @@ import lessLogo from "../../images/logos/techicons/less-logo.png";
 import nodejs from "../../images/logos/techicons/nodejs-logo.png";
 import npmjs from "../../images/logos/techicons/npm-logo.png";
 
-const popupContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. `;
+const popupContent = () => {
+  return (
+    <>
+      <div>
+        This website is a showcase of my works so far. Still it is under development. Just using this site, for my carrier growth. I'm an experienced, detailed-oriented, front-end web developer. I have 10 years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, and JavaScript, along with Strong knowledge in React.js and its advanced concepts.
+      </div> <br />
+      <div>
+      Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine and I am confident I would be an excellent addition to your organization. In addition to my knowledge base, I actively seek out new technologies and stay up-to-date on industry trends and advancements. This has allowed me to stay ahead of the curve and deliver exceptional work to all of my employers, including those I've worked for on a project basis.
+      </div> <br />
+      <div>
+          Thanks & regards, <br/>
+          Pradeep Kumar S <br />
+          8939977900 <br />
+          pradeepkarunya@gmail.com
+      </div>
+    </>
+  )
+};
 
 const popup = (props) => {
   return (
@@ -243,7 +258,7 @@ const popup = (props) => {
             </div>
           </div>
           <h5 className="heading_tertiary">Profile</h5>
-          <p className="popup__text">{popupContent}</p>
+          <p className="popup__text">{popupContent()}</p>
           <div className="popup__profileview">
             <button
               className="btn btn-labeled btn-success"
